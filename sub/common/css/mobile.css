@@ -1,0 +1,229 @@
+@media (max-width: 1080px) {
+	.container {
+		padding: 0;
+	}
+	.mobile {
+		display: block;
+	}
+	header .wrap nav {
+		display: none;
+	}
+	header.menu .mobile-menu {
+		background: url("../img/ic_mobile_close.svg") no-repeat center/cover !important;
+	}
+	header.menu:after {
+		opacity: 0;
+	}
+	header.menu.fixed:after {
+		background: rgba(77, 77, 77, 0.57);
+	}
+	header.menu.fixed .wrap {
+		background: rgba(77, 77, 77, 0.57);
+	}
+	header.menu.fixed .wrap:after {
+		content: ''; left: 0; right: 0;
+	}
+	header.menu.fixed .wrap h1.logo a {
+		color: #fff;
+	}
+	header.menu.fixed .wrap nav .gnb-wrap .gnb-btn.type-logout {
+		background: url(../img/ic_logout.svg) no-repeat center left; background-size: 10px 9.5px;
+	}
+	header.menu.fixed .wrap nav .gnb-wrap .gnb-btn {
+		color: #fff;
+	}
+	header.menu .wrap:after {
+		content: '';
+		position: absolute; left: 10px; right: 10px;
+		height: 40px; background: rgba(77, 77, 77, 0.57); z-index: -1;
+	}
+	header.menu .wrap nav {
+		display: block;
+		position: absolute; left: 0; right: 0; top: -10px;
+		background: rgba(0, 0, 0, 0.7); z-index: -1; padding-top: 45px;
+	}
+	header.menu .wrap nav .gnb-wrap {
+		flex-direction: column;
+	}
+	header.menu .wrap nav .gnb-wrap .gnb-btn-box {
+		text-align: center; width: 100%;
+	}
+	header.menu .wrap nav .gnb-wrap .gnb-btn-box + .gnb-btn-box {
+		margin-left: 0;
+	}
+	header.menu .wrap nav .gnb-wrap .gnb-btn-box .gnb-btn {
+		height: 40px; font-size: 12px;
+	}
+	header {
+		top: 5px; width: 100%;
+	}
+	header:after {
+		left: 10px; right: 10px; min-width: calc(100% - 20px); idth: calc(100% - 20px);
+	}
+	header .wrap {
+		height: 40px; position: relative; z-index: 100; width:100%; padding:0 0;
+	}
+	header .wrap .mobile-menu {
+		display: block;
+		position: absolute; right: 15px; top: 50%; transform: translateY(-50%);
+		width: 11px; height: 11px; background: url("../img1/ic_mobile_menu.svg") no-repeat center/cover;
+	}
+	header.fixed .wrap .mobile-menu {
+		background: url("../img1/ic_mobile_menu_on.svg") no-repeat center/cover;
+	}
+	header .wrap h1.logo {
+		left: 15px;
+	}
+	header .wrap nav .gnb-wrap .gnb-btn.type-logout {
+		background-size: 10px 9.5px; padding-left: 15px;
+	}
+	header .wrap h1.logo a {
+		font-size: 13px;
+	}
+	/***************************************************************************************************************************xxxxxxx*/
+
+	header.fixed:after {
+		left: 0px; right: 0px; min-width: calc(100% - 0px); width: calc(100% - 0px);
+	}
+
+	.Visual-wrap {
+		height: 250px;
+	}
+	.Visual-wrap img {
+		height: 250px;
+	}
+	.Visual-wrap h2 {
+		top: 110px;
+		font-size: 2em;
+	}
+	.Visual-wrap h3 {
+		top: 150px; font-size: 1.125em; padding:0 5%; width:90%;
+	}
+
+	#tabMenu-wrap {
+		width: 100%;
+		top: 250px;
+		left: 0;
+	}
+	#tabMenu-wrap ul {
+		width:100%;
+	}
+	#tabMenu-wrap li:first-child {
+		display: none;
+	}
+	#tabMenu-wrap li {
+		width:33.3%;
+	}
+	#tabMenu-wrap a {
+		font-size: 1em;
+		height:42px; line-height:42px;
+	}
+	#tabMenu-wrap a:hover {
+		height:44px; line-height: 44px;
+	}
+	#tabMenu-wrap li:last-child a {
+		width: 100%; height:38px; line-height: 38px; color: #fff; position: fixed; bottom: 0; left: 0;
+	}
+	#tabMenu-wrap li a span {
+		display: none;
+	}
+	#tabMenu-wrap.fix_height1 {
+		position:fixed; top:50px;
+	}
+	#tabMenu-wrap.fix_height2 {
+		position:absolute; top:250px;	
+	}
+
+	section {
+		width:100%;
+	}
+
+	section .inner {
+		width: 100%; margin: 0; padding: 30px 5% 0; font-size: 1em; border:0px;
+	}
+	section .inner h2 {
+		font-size: 1.25em;
+	}
+	section .inner h3 {
+		font-size: 1.125em;
+	}
+	section .inner p.explanation {
+		font-size: .875em;
+	}
+
+	/*************************************** 여행자보험 */
+	.row-highlight li {
+		font-size: .875em;
+	}
+	.join-notice {
+		font-size: 1em;
+	}
+	.join-notice li {
+		text-indent: -14px; padding-left: 14px; font-size: .875em;
+	}
+	.box-cont li {
+		font-size: .875em;
+	}
+	.terms-area {
+		margin-top: 20px; font-size: .75em;
+	}
+	.terms-area li {
+		width: 45%; margin-right: 5%;
+	}
+	.terms-area li p {
+		font-weight: 800;
+	}
+	
+	.row-prec {
+		padding: 10px 0 0; font-size: .75em;
+	}
+	.common-type {
+		font-size: .75em; letter-spacing: -.025em; padding-top: 20px;
+	}
+
+	/*************************************** Table Sytl Css ****/
+	.table-basic thead th, .table-basic tbody th, .table-basic tbody td {
+		border: 1px solid #dfdfe1; padding:5px 2%; font-size:.875em;
+	}
+	.table-basic thead th:first-child, .table-basic th:first-child, .table-basic td:first-child {
+		border-left: 1px solid #dfdfe1;
+	}
+	.table-basic thead th:nth-child(1) {
+		width: 25%;
+	}
+	.table-basic thead th:nth-child(2) {
+		width: 45%;
+	}
+	.table-basic thead th:nth-child(3) {
+		width: 30%;
+	}
+	.table-basic tbody td {
+		font-size: .875em;
+	}
+	
+	.table-basic1 thead th, .table-basic1 tbody th, .table-basic1 tbody td {
+		padding: 5px 2%;
+		font-size: .875em;
+		border: 1px solid #dfdfe1;
+	}
+	.table-basic1 th:nth-child(1) {
+		width: 40%;
+	}
+	.table-basic1 td:nth-child(2){
+		width:60%;
+	}
+
+	.table-basic2 thead th, .table-basic2 tbody th, .table-basic2 tbody td, .table-basic2 tfoot th, .table-basic2 tfoot td {
+		padding: 5px 2%; font-size: .875em; border: 1px solid #dfdfe1;
+	}
+	
+	.table-basic2 tbody th {
+		width:10%;
+	}
+	.table-basic2 thead th:nth-child(2){
+		width:17%;
+	}
+	.table-basic2 thead tr:first-child th:first-child {
+		width:47%;
+	}
+}

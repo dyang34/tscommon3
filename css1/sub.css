@@ -1,0 +1,1156 @@
+.clearfix:after {content:" "; display:block; clear:both;}
+a {
+	cursor: pointer;
+}
+.cont_sub {
+	width:1200px;
+	height:auto;
+	min-height: 800px;
+	margin:0 auto;
+	border-left:1px solid #dadee7;
+	border-right:1px solid #dadee7;
+}
+
+.sub_visual1_wrap, .sub_visual2_wrap, .sub_visual3_wrap, .sub_visual4_wrap {
+	position: relative;
+    padding-top: 80px;
+	width:100%; height:250px;
+    text-align: center;
+
+}
+
+/****************************************************************** 해외여행자보험 Style Css *************/
+.sub_visual1_wrap:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 250px;
+	background:url('../img1/sub_images_overseas_traveler.png') center no-repeat; background-size: cover;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	z-index: 2;
+}
+.sub_visual1_wrap > h2 {
+	font-size:38px; font-weight:700;
+	color:#fff;
+	position: absolute; top:130px; left:0;
+	width:100%;
+	z-index: 3; 
+}
+.sub_visual1_wrap > p {
+	font-size:15px; font-weight:400;
+	color:#fff;
+	position: absolute; top:175px; left:0;
+	width:100%;
+	z-index: 3;
+}
+
+
+.section {
+	width: 100%; max-width: 100%; min-width: 1060px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+}
+.inner {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding:0px;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.inner:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.subMenu {
+	height: 60px;
+	z-index: 101;
+	width: 100%;
+	background: transparent;
+}
+
+.subMenu .inner {
+	padding:0;
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+
+.sub_title, .subNavBtn {
+	float:left; text-align: left;
+	font-size:16px;
+	line-height:58px;
+}
+.sub_title {
+	width:410px;
+	padding-left:20px;
+	font-weight:500;
+	border: 1px solid #dadee7;
+	background-color:#fff;
+	color:#383e4c;
+}
+.subNavBtn {
+	display: inline-block;
+	width: 191px; line-height: 58px;
+	margin: 0px; padding:0px;
+	text-decoration: none;
+	color: #777d89;
+	background-color:#f1f1f1;
+	border: 1px solid #dadee7;
+	margin-left:-1px;
+	position: relative;
+}
+.subNavBtn:nth-child(5) {
+	width:220px;
+	color:#fff;
+	background-color:#ff0198;
+	border:0px; line-height:60px;
+	margin-right:-1px;
+}
+.subMenu a:hover {
+	background: #383e4c;
+	border: 1px solid #383e4c;
+	color:#fff;
+}
+.subMenu a:hover.subNavBtn:nth-child(5) {
+	background-color:#ff0198;
+	border:0px; line-height:60px;
+	color:#fff;
+}
+.subNavBtn span {
+	display: inline-block;
+	width:64px;
+}
+.subNavBtn:nth-child(4) span {
+	width:62px;
+}
+.subNavBtn:nth-child(5) span {
+	width:66px;
+}
+.subNavBtn span:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 17px;
+	z-index: 1;
+}
+.subNavBtn span.icon1::before {
+	background:url('../img1/icon_Forward_01_off.png') no-repeat;
+    left: 40px;
+    width: 18px;
+    height: 24px;
+}
+.subNavBtn span.icon2::before {
+	background:url('../img1/icon_Forward_02_off.png') no-repeat;
+    left: 40px;
+    width: 18px;
+    height: 24px;
+}
+.subNavBtn span.icon3::before {
+	background:url('../img1/icon_Forward_03_off.png') no-repeat;
+    left: 34px; top:18px;
+    width: 22px;
+    height: 24px;
+}
+.subNavBtn span.icon4::before {
+	background:url('../img1/icon_Forward_04_on.png') no-repeat;
+    left: 41px;
+    width: 19px;
+    height: 24px;
+}
+.subMenu a:hover.subNavBtn span.icon1::before, 
+.subMenu a.active span.icon1::before {
+	background:url('../img1/icon_Forward_01_off.png') no-repeat;
+    left: 40px;
+    width: 18px;
+    height: 24px;
+}
+.subMenu a:hover.subNavBtn span.icon2::before, 
+.subMenu a.active span.icon2::before {
+	background:url('../img1/icon_Forward_02_on.png') no-repeat;
+    left: 40px;
+    width: 18px;
+    height: 24px;
+}
+.subMenu a:hover.subNavBtn span.icon3::before, 
+.subMenu a.active span.icon3::before {
+	background:url('../img1/icon_Forward_03_on.png') no-repeat;
+    left: 34px; top:18px;
+    width: 22px;
+    height: 24px;
+}
+
+.active {
+	background: #383e4c; border: 1px solid #383e4c; color:#fff;
+}
+.end {
+	margin: 0;
+}
+.fxd {
+	position: fixed;
+	top:80px;
+}
+
+
+
+/* SECTIONS */
+.sTop {
+	background:transparent;
+}
+
+.s1, .s2, .s3, .s4 {
+	font-family: "NotoSansKR", sans-serif;
+}
+
+.section .inner > h2 {
+	font-size: 20px; font-weight: 500;
+	color:#383e4c; line-height:100%;
+}
+.section .inner > h3.first {
+	padding-top:20px;
+}
+.section .inner > h3 {
+	font-size: 17px; font-weight: 500;
+	color:#383e4c; line-height:100%;
+	padding-top:80px;
+}
+.s1 .inner {
+	padding:60px 70px;
+	height:auto;
+}
+.s2 .inner {
+	padding:60px 70px;
+}
+.s3 .inner {
+	padding:60px 70px;
+}
+.s2 h2 {
+	padding-top:30px;
+}
+.s2 {
+	padding-top:0px;
+}
+.s2 h2 {
+	padding-top:30px;
+}
+.s3 {
+	margin-top:0px;
+}
+.s3 h2 {
+	padding-top:30px;
+}
+
+.row3 {
+	position: relative;
+	padding: 17px 0 0 57px;
+    counter-reset: num;
+    min-height: 45px;
+}
+p.explanation {
+	position:relative;
+	color:#656565; padding:10px 0 0 10px;
+}
+p.explanation2 {
+	color:#656565; padding-top:15px;
+}
+p.explanation3 {
+	color:#656565; padding-top:8px;
+}
+p.explanation:before {
+	content: "";
+	display: block;
+	width: 3px;
+	height: 3px;
+	background:url('../img1/icon_dot.png') no-repeat;
+	position: absolute;
+	top: 17px; left:0;
+	z-index: 1;
+}
+.row3:before {
+	content:"주";
+	display:block;
+	position:absolute;
+	top:20px; left:0;
+	font-size:15px;
+	width:42px;
+	height:42px;
+	color:#333;
+	text-align:center;
+	line-height:39px;
+	border:2px solid #595c63;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.row3 li {
+	position: relative;
+	color:#666;
+	line-height:140%;
+	font-size:14px;
+	padding-left:15px;
+}
+.row3 li:before {
+    content:"1.";
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.row4 {
+	line-height:140%;
+}
+.row4 li.cont_title {
+	padding-top:30px;
+	font-weight:500;
+}
+.row4 li {
+	padding-top:4px;
+	letter-spacing: -1px;
+}
+.row4 li:nth-child(2) {
+	padding-top:10px;
+}
+.row5 {
+	margin-top: 25px;
+    padding: 21px 20px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+}
+.row5 li {
+    position: relative;
+	padding: 0 0 6px 11px;
+	color: #777;
+	letter-spacing: -1px;
+}
+.row5 li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    background: #343434;
+    border-radius: 50%;
+}
+.row6 {
+	margin-top: 25px;
+}
+.row6 li{
+	float:left;
+	width:30%;
+	margin-right:20%;
+	font-weight:400;
+}
+.row6 li > p {
+	padding-bottom: 10px;
+	font-weight:500; font-size:16px;
+}
+.row6 li > a {
+	font-weight:500; font-size:16px;
+}
+.row_minus {
+	margin-top: 10px;
+	line-height:150%;
+}
+.row_minus li {
+    position: relative;
+	padding: 0px;
+	color: #777;
+	letter-spacing: -1px;
+}
+.row_minus li:before {
+    content: "-";
+    display: inline;
+    padding-right: 5px;
+}
+.row_number {
+	margin-top: 10px;
+	line-height:150%;
+}
+.type--numlist {
+	margin-top: 10px;
+	line-height:150%;
+}
+.type--numlist li.sub_ttl {
+	color:#000; font-weight:500;
+}
+.type--numlist li.sub_cont {
+	color:#000; font-weight:300;
+}
+.type--numlist li {
+	text-indent: -14px;
+    padding-left: 14px;
+	
+}
+.type--numlist .type--1dep {
+	margin-bottom: 5px;
+}
+p.cont_title {
+	font-size: 17px; font-weight: 500;
+	color:#ff0198; line-height:100%;
+	padding-top:25px;
+}
+p.cont_title2 {
+	font-size: 14px; font-weight: 600;
+	color:#000; line-height:100%;
+	padding-top:15px;
+}
+p.cont_text {
+	font-size: 14px; font-weight: 300;
+	color:#000; line-height:100%;
+	padding-top:8px;
+}
+
+
+/* --------------------------------------------- table Style Css */
+.table-basic, .table-basic2, .table-basic3 {
+	width:100%;
+	border-collapse:collapse; border-spacing:0px;
+	letter-spacing:-.025em; font-family: "NotoSansKR", sans-serif;
+	background: #fff; border-top:2px solid #595c63;
+	margin-top:20px;
+}
+.table-basic thead th,
+.table-basic tbody th,
+.table-basic tbody td {
+	border-left:1px solid #dfdfe1;
+	border-bottom:1px solid #dfdfe1;
+	padding: 8px 15px 10px 14px;
+    font-size: 14px; font-weight:300;
+}
+.table-basic thead th:first-child,
+.table-basic th:first-child, 
+.table-basic td:first-child {
+	border-left:0;
+}
+.table-basic td:last-child {
+	text-align:left;
+}
+.table-basic thead th {
+	color:#000; font-weight:500;
+	vertical-align:middle;
+	background-color:#f7f7f7; 
+}
+.table-basic tbody td { 
+	color:#111; line-height:160%;
+	vertical-align:middle;
+}
+.table-basic tbody td.left { 
+	text-align:left;
+}
+.table-basic tbody td strong { color: #000; font-weight: 800; 
+}
+
+.table-basic2 thead th,
+.table-basic2 tbody th,
+.table-basic2 tbody td {
+	border-left:1px solid #dfdfe1;
+	border-bottom:1px solid #dfdfe1;
+	padding: 8px 15px 10px 14px;
+    font-size: 14px;
+	text-align:left;
+}
+.table-basic2 thead th:first-child,
+.table-basic2 th:first-child, 
+.table-basic2 td:first-child {
+	border-left:0;
+}
+.table-basic2 th {
+	color:#000; font-weight:500;
+	vertical-align:middle; font-weight:500;
+	background-color:#f7f7f7; 
+}
+.table-basic2 td { 
+	color:#111; line-height:160%;
+	vertical-align:middle;
+	text-align:left; font-weight:300;
+}
+
+.table-basic3 tr th, .table-basic3 tr td { 
+	border-bottom:1px solid #dfdfe1;
+	border-left:1px solid #dfdfe1; 
+}
+.table-basic3 tr th { 
+	padding:8px 0; 
+	background:#f7f7f7;
+	text-align:center;
+	color:#333;
+	font-size:16px; 
+}
+.table-basic3 tbody th, .table-basic3 tfoot td {
+	background:#f0f0f0;
+}
+.table-basic3 tr td {
+	padding:12px;
+	text-align:right;
+	font-size:14px;
+}
+.table-basic3 tr th:first-child, .table-basic3 tr td:first-child {
+	border-left:0;
+}
+.table-basic3 thead tr + tr th:first-child {
+	border-left:1px solid #dfdfe1;
+}
+.table-basic3 tr.ta_l th, .table-basic3 tr.ta_l td {
+	text-align:left;
+}
+.table-basic3 tbody td:first-child {
+	text-align:left;
+}
+.table-basic3.narrow tr th {
+	padding:14px 0;
+}
+.table-basic3.prod tr th, .table-basic3.prod tr td {
+	padding:8px 15px 10px 14px;
+	font-size:14px;
+}
+.table-basic3 tfoot th, .table-basic3 tfoot td {
+	background:#f7f7f7;
+	color:#ff0198;
+	font-weight:500;
+}
+.table-basic3 .strong th, .table-basic3 .strong td, .table-basic3 .strong td.on,
+.table-basic3 .strong td .select-type2, .table-basic3 .strong td .select-type2 select {
+	background:#f7f7f7;
+	color:#6e27c5;
+	font-size:18px;
+} 
+.table-basic3 tbody td em {
+	text-decoration:underline;
+}
+.tableSt02 {
+	display:none;
+}
+.pdctable {
+	display:none;
+}
+.ta_l {
+    text-align: left !important;
+}
+.ta_c {
+    text-align: center !important;
+}
+
+table caption {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -5000px;
+    font-size: 1px;
+    line-height: 1px;
+	display: none;
+}
+
+/****************************************************************** 국내여행보험 Style Css *************/
+.sub_visual3_wrap:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 250px;
+	background:url('../img1/sub_images_korea_travel.png') center no-repeat; background-size: cover;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	z-index: 2;
+}
+.sub_visual3_wrap > h2 {
+	font-size:38px; font-weight:700;
+	color:#fff;
+	position: absolute; top:130px; left:0;
+	width:100%;
+	z-index: 3; 
+}
+.sub_visual3_wrap > p {
+	font-size:15px; font-weight:400;
+	color:#fff;
+	position: absolute; top:175px; left:0;
+	width:100%;
+	z-index: 3;
+}
+
+
+/****************************************************************** 장기체류자보험 Style Css *************/
+.sub_visual4_wrap:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 250px;
+	background:url('../img1/sub_images_long_stay.png') center no-repeat; background-size: cover;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	z-index: 2;
+}
+.sub_visual4_wrap > h2 {
+	font-size:38px; font-weight:700;
+	color:#fff;
+	position: absolute; top:130px; left:0;
+	width:100%;
+	z-index: 3; 
+}
+.sub_visual4_wrap > p {
+	font-size:15px; font-weight:400;
+	color:#fff;
+	position: absolute; top:175px; left:0;
+	width:100%;
+	z-index: 3;
+}
+
+
+
+/****************************************************************** SoS 서비스 Style Css *************/
+
+.sub_visual2_wrap:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 250px;
+	background:url('../img1/sub_images_sos.png') center no-repeat; background-size: cover;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	z-index: 1;
+}
+.sub_visual2_wrap > h2 {
+	font-size:38px; font-weight:700;
+	color:#fff;
+	position: absolute; top:130px; left:0;
+	width:100%;
+	z-index: 2; 
+}
+.sub_visual2_wrap > p {
+	font-size:15px; font-weight:400;
+	color:#fff;
+	position: absolute; top:175px; left:0;
+	width:100%;
+	z-index: 2;
+}
+
+.cont_sub > h2.title {
+	font-size:24px; font-weight:400;
+	margin:0px auto;
+	padding-top:70px;
+	text-align:center;
+	line-height:130%;
+	letter-spacing: -.55px;
+}
+.cont_sub > h2.title strong {
+	font-weight:500; color:#4a99ff;
+}
+.cont_sub .row1 {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 70px 0;
+    vertical-align: top;
+}
+.cont_sub .col_2 {
+	float:left;
+	width:325px;
+}
+.cont_sub .col_2 span.number {
+	font-size: 66px;
+	float:left;
+	width:40%;
+	line-height:70%;
+	text-align:right;
+	letter-spacing: -2px;
+}
+.cont_sub .col_2 > p{
+	float: left;
+    padding-left: 14px;
+    font-size: 16px;
+	color:#333; font-weight:300;
+    line-height: 130%;
+    letter-spacing: -1px;
+}
+.cont_sub .col_2 > p em{
+	font-style: normal;
+	display: block;
+    padding-top: 4px;
+    font-size: 13px;
+	font-weight:500;
+}
+.cont_sub .col_2 > p:before {
+	content: "";
+	display: block;
+	margin-bottom:15px;
+	width:20px;
+	height:3px;
+	background-color:#000;
+}
+.cont_sub .col_2.ty1 {
+	float:left;
+	width:873px;
+	letter-spacing: -.55px;
+}
+.cont_sub .col_2.ty1 li {
+	font-size:18px; font-weight:300;
+}
+.cont_sub .col_2.ty1 li:before {
+	content: "-";
+	display: inline-block;
+	line-height:150%;
+	width:15px; height:auto;
+}
+.cont_sub .col_2.ty2 {
+	float:left;
+	width:873px;
+	letter-spacing: -.55px;
+}
+.cont_sub .col_2.ty2 .call_box {
+	background-color:#fafafa;
+	border:1px solid #afafaf;
+	font-size:28px; font-weight:700; line-height:100px;
+	width:480px; height:100px;
+	position: relative;
+	padding-left: 115px;
+	letter-spacing: -.55px;
+}
+.cont_sub .col_2.ty2 .call_box:before {
+	content: "";
+	display: block;
+	background:url('../img1/icon_sub_call.png') no-repeat;
+	width:58px; height:55px;
+	position: absolute;
+	top: 22px;
+	left: 30px;
+}
+.cont_sub .col_2.ty2 .call_box span {
+	font-size:22px; font-weight:500;
+}
+
+.cont_sub .col_2.ty2 li {
+	font-size:16px; color:#333; line-height:130%; font-weight:300;
+	padding-right:50px;
+	padding-top:5px;
+}
+.cont_sub .col_2.ty2 li:nth-child(2n+1) {
+	margin-top:30px;
+	font-size:18px; font-weight:500;
+
+}
+
+.cont_sub .row2 {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 70px 0;
+    vertical-align: top;
+	background-color:#f7f7f7;
+}
+
+
+/****************************************************************** Top.Btn Style Css *************/
+.Top_wrap {
+	position:fixed;
+	bottom:15%;
+	right:5%;
+	z-index:11;
+}
+.Top_wrap li {
+	width:80px; height:80px;
+	margin:0; padding:0px;
+}
+.Top_wrap li a {
+	cursor: pointer;
+}
+
+/****************************************************************** Btn Style Css *************/
+.btn {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 60px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.btn.down {
+    width: 100%;
+    height: 43px;
+    text-align: center;
+    color: #333;
+    background: #fafafa;
+    line-height: 41px;
+    border: 1px solid #afafaf;
+}
+
+
+/********************************* 모바일 해상도 Style Css *************/
+
+@media (max-width: 1080px) {
+	.sub_visual1_wrap, .sub_visual2_wrap {
+		padding-top: 50px;
+		height: 200px;
+	}
+	.sub_visual1_wrap:after, 
+	.sub_visual2_wrap:after {
+		top: 0px;
+		height: 200px;
+	}
+	.sub_visual1_wrap > h2, .sub_visual2_wrap > h2 {
+		font-size: 2em;
+		position: absolute;
+		top: 80px;
+		left: 0;
+	}
+	.sub_visual1_wrap > p, .sub_visual2_wrap > p {
+		font-size: 1em;
+		top: 120px;
+		left: 10%;
+		width: 80%;
+	}
+	.sub_title {
+		display:none;
+	}
+	.cont_sub {
+		width: 100%;
+		min-height: 800px;
+		margin: 0 auto;
+		border: 0px;
+	}
+	.fxd {
+		top:50px;
+	}
+
+	
+	/************************ 해외여행자보험 Style Css *************/
+	.sub_title, .subNavBtn {
+		font-size: 1em;
+	}
+	.subNavBtn {
+		width: 33.3%;
+		line-height: 45px;
+		text-align:center;
+		margin-left: 0px;
+	}
+	.subNavBtn:nth-child(2) {
+		width: 33.4%;
+	}
+	.subNavBtn:nth-child(5) {
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		display:none;
+	}
+	.subNavBtn span {
+		display:none;
+	}
+
+
+	.section {
+		width: 100%;
+		min-width: 90%;
+	}
+	.s1 .inner {
+		padding:30px 5% 0;
+		height:auto;
+	}
+	.s2 .inner {
+		padding:30px 5% 0;
+	}
+	.s3 .inner {
+		padding:30px 5% 0;
+	}
+	.section .inner > h2 {
+		font-size:1.25em;
+	}
+	.s2 h2 {
+		padding-top: 50px;
+	}
+	.s3 h2 {
+		padding-top: 50px;
+	}
+	.section .inner > h3 {
+		font-size: 1.05em;
+		padding-top:20px;
+	}
+	.section .inner > h3.first {
+		padding-top:15px;
+	}
+	p.explanation {
+		padding-top: 5px;
+		font-size: 0.875em;
+	}
+	p.explanation:before {
+		content: "";
+		background: url(../img1/icon_dot.png) top center no-repeat;
+		position: absolute;
+		top: 10px;
+	}
+	p.explanation2 {
+		padding-top: 10px;
+		font-size: 0.875em;
+	}
+	p.cont_title {
+		font-size: 1.05em;
+		padding-top: 15px;
+	}
+	li{
+		font-size:.875em;
+	}
+	.row3 {
+		position: relative;
+		padding-left:0px;
+	}
+	.row3:before {
+		top: 15px;
+		font-size: 0.95em;
+		width: 32px;
+		height: 32px;
+		line-height: 29px;
+	}
+	.row3 li {
+		font-size: 0.875em;
+	}
+	.row3 li:first-child {
+		padding-top:38px;
+	}
+	.row3 li:before {
+		font-size: 0.95em;
+		top: 37px;
+	}
+	.row4 li.cont_title {
+		padding-top: 20px;
+	}
+	.row4 li {
+		font-size: 0.875em;
+	}
+	.row4 li.typ-number {
+		text-indent: -12px;
+		padding-left: 12px;
+	}
+	.row5 {
+		margin-top: 15px;
+		padding: 15px 5%;
+	}
+	.row5 li {
+		padding: 0 0 6px 8px;
+		font-size: 0.875em;
+	}
+	.row6 li {
+		width: 47.5%;
+		margin-right: 5%;
+	}
+	.row6 li:last-child {
+		margin-right: 0%;
+	}
+	.row6 li > p {
+		font-size: 1em;
+	}
+	.row6 li > a {
+		font-weight: 500;
+		font-size: 0.95em;
+	}
+	
+	/* --------------------------------------------- table Style Css */
+	.table-basic, .table-basic2 {
+		width:100%;
+		border-collapse:collapse; border-spacing:0px;
+		letter-spacing:-.025em; font-family: "NotoSansKR", sans-serif;
+		background: #fff; border:1px solid #dfdfe1;
+		margin-top:10px;
+	}
+	.table-basic thead th,
+	.table-basic tbody th,
+	.table-basic tbody td {
+		padding: 5px 2% 5px 2%;
+		font-size: 0.875em;
+		font-weight:400;
+	}
+	.table-basic thead th:first-child,
+	.table-basic th:first-child, 
+	.table-basic td:first-child {
+		border-left:0;
+	}
+	.table-basic td:last-child {
+		text-align:right;
+	}
+	.table-basic thead th {
+		font-weight:700;
+	}
+	.table-basic tbody td {
+		color:#666;
+	}
+	
+	.table-basic2 thead th,
+	.table-basic2 tbody th,
+	.table-basic2 tbody td {
+		padding: 5px 2% 7px;
+		font-size:.875em;
+		text-align:left;
+	}
+
+	.table-basic3 {
+		display:none;
+	}
+	
+	.pdctable {
+		display:block;
+		width:100%; float:left;
+		border-top:solid 1px #ccc;
+		background:#fff;
+		font-size:.875em;
+		margin:10px 0 20px;
+		border-left:solid 1px #ccc;
+		border-right:solid 1px #ccc;
+		border-collapse: collapse;
+		border-spacing: 0px;
+		letter-spacing: -.025em;
+		border-collapse:collapse;
+	}
+	.pdctable thead th {
+		padding:7px;
+		border-bottom:solid 1px #ccc;
+		border-right:solid 1px #ccc;
+		font-weight:500;
+		background:#f5f5f5;
+		text-align:center;
+	}
+	.pdctable tbody th {
+		border-bottom:solid 1px #ccc;
+		border-right:solid 1px #ccc;
+		padding:7px;
+		text-align:center;
+		color:#333;
+		font-weight:400;
+		text-align:left;
+	}
+	.pdctable thead th,
+	.pdctable tbody th{
+		color:#333;
+		font-weight:700;
+		background:#eaecee;
+	}
+	.pdctable tbody td {
+		color:#666;
+		text-align:left;
+		border-bottom:solid 1px #ccc;
+		border-right:solid 1px #ccc;
+		padding:7px;
+	}
+	.pdctable tfoot th, .pdctable tfoot td {
+		text-align: right;
+		color: #ff0198;
+		background: #eaecee;
+		padding: 7px;
+		border-right: solid 1px #ccc;
+		border-bottom: solid 1px #ccc;
+	}
+	.pdctable thead th:last-child, .pdctable tbody th:last-child,
+	.pdctable tbody td:last-child {
+		border-right:0;
+	}
+	.txtC {
+		text-align: center !important;
+	}
+	.txtR {
+		text-align: right !important;
+	}
+	.ta_l {
+		text-align: left !important;
+	}
+	.ta_c {
+		text-align: center !important;
+	}
+	.mgb-50 {
+		margin-bottom:50px;
+	}
+	
+	/************************ 해외여행자보험 Style Css *************/
+	.cont_sub > h2.title {
+		font-size: 1.125em;
+		margin: 0px 5%;
+		width:90%;
+		padding-top: 30px;
+	}
+	.cont_sub > h2.title > span {
+		display: block;
+		letter-spacing: -1px;
+	}
+	.cont_sub .row1 {
+		padding: 30px 0;
+	}
+	.cont_sub .col_2 {
+		clear:left;
+		width:90%;
+		margin:0 auto 10px;
+	}
+	.cont_sub .col_2 span.number {
+		font-size: 4.714em;
+		width:35%;
+	}
+	.cont_sub .col_2 > p{
+		padding-left: 5%;
+		font-size: .875em;
+	}
+
+	.cont_sub .col_2 > p em{
+		font-size: .8em;
+	}
+
+	.cont_sub .col_2.ty1 {
+		width:90%;
+		margin:0 5%;
+	}
+	.cont_sub .col_2.ty1 li:before {
+	}
+	.cont_sub .col_2.ty1 li {
+		font-size: 1.05em;
+		/*text-indent: -12px;
+		padding-left: 12px;*/
+	}
+	.cont_sub .col_2.ty1 ul {
+		margin: 10px 0 0 5%;
+	}
+	.cont_sub .col_2.ty2 {
+		clear:left;
+		width:90%;
+		margin:0 5%;
+	}
+	.cont_sub .col_2.ty2 .call_box {
+		font-size:1.6em; line-height:100%;
+		width:100%; height: 160px;
+		padding: 90px 10% 0;
+	}
+	.cont_sub .col_2.ty2 .call_box span {
+		font-size:.75em; display: block;
+	}
+
+	.cont_sub .col_2.ty2 li {
+		font-size:1em;
+		padding-right:0px;
+		padding-top:5px;
+	}
+	.cont_sub .col_2.ty2 li:nth-child(2n+1) {
+		margin-top:20px;
+		font-size:1.125em;
+
+	}
+
+	.Top_wrap {
+		position:fixed;
+		bottom:5%;
+		right:2%;
+		z-index:11;
+	}
+	.Top_wrap li {
+		width:50px; height:50px;
+		margin:0; padding:0px;
+	}
+	.Top_wrap li img {
+		width:100%; height:100%;
+	}
+
+}

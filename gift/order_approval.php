@@ -1,0 +1,53 @@
+<?php
+    $root_dir = substr($_SERVER['DOCUMENT_ROOT'], 0, strrpos(substr($_SERVER['DOCUMENT_ROOT'], 0, strlen($_SERVER['DOCUMENT_ROOT'])-1),'/',0));
+    require_once $root_dir."/tscommon3/include/common.php";
+    
+    require_once $root_dir."/tscommon3/bill_kcp/cfg/site_conf_inc.php";
+    require_once $root_dir."/tscommon3/js/KCPComLibrary.php";
+    
+
+    $charSetType      = "utf-8";             // UTF-8인 경우 "utf-8"로 설정
+    
+    $siteCode         = $_GET[ "site_cd"     ];
+    $orderID          = $_GET[ "ordr_idxx"   ];
+    $paymentMethod    = $_GET[ "pay_method"  ];
+    $escrow           = ( $_GET[ "escw_used"   ] == "Y" ) ? true : false;
+    $productName      = $_GET[ "good_name"   ];
+
+    // 아래 두값은 POST된 값을 사용하지 않고 서버에 SESSION에 저장된 값을 사용하여야 함.
+    $paymentAmount    = $_GET[ "good_mny"    ]; // 결제 금액
+    $returnUrl        = $_GET[ "Ret_URL"     ];
+
+    // Access Credential 설정
+    $accessLicense    = "";
+    $signature        = "";
+    $timestamp        = "";
+
+    // Base Request Type 설정
+    $detailLevel      = "0";
+    $requestApp       = "WEB";
+    $requestID        = $orderID;
+    $userAgent        = $_SERVER['HTTP_USER_AGENT'];
+    $version          = "0.1";
+
+    try
+    {
+        $payService = new PayService( $g_wsdl );
+
+        $payService->setCharSet( $charSetType );
+        
+        $payService->setAccessCredentialType( $accessLicense, $signature, $timestamp );
+        $payService->setBaseRequestType( $detailLevel, $requestApp, $requestID, $userAgent, $version );
+        $payService->setApproveReq( $escrow, $orderID, $paymentAmount, $paymentMethod, $productName, $returnUrl, $siteCode );
+
+        $approveRes = $payService->approve();
+                
+        printf( "%s,%s,%s,%s", $payService->resCD,  $approveRes->approvalKey,
+                               $approveRes->payUrl, $payService->resMsg );
+
+    }
+    catch (SoapFault $ex )
+    {
+        printf( "%s,%s,%s,%s", "95XX", "", "", iconv("EUC-KR","UTF-8","연동 오류 (PHP SOAP 모듈 설치 필요)" ) );
+    }
+?>

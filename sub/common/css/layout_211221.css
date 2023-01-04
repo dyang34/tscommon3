@@ -1,0 +1,350 @@
+#wrap {
+    width: 100%;
+    min-width: 1200px;
+    position: relative;
+	margin:0 auto;
+}
+
+/*text-align*/
+.txt-R{text-align:right !important;}
+.txt-L{text-align:left !important;}
+.txt-C{text-align:center !important;}
+ 
+
+/*************************************** Visual Area Sytl Css ****/
+.Visual-wrap {
+	display: flex; width:100%; height: 330px; position: relative;
+}
+.Visual-wrap h2 {
+	width: 100%; position: absolute; top: 170px; left: 0; text-align:center; font-size:2.2em; font-weight:700; color:#fff;
+}
+.Visual-wrap h3 {
+	width: 100%; position: absolute; top: 210px; left: 0; text-align:center; font-size:1.25em; font-weight:500; color:#fff;
+}
+.Visual-wrap li {
+	width: 100%; text-align:center;
+}
+.Visual-wrap img {
+	width:100%;
+}
+
+#tabMenu-wrap {
+  overflow: hidden; background-color: #fff; padding: 0px; transition: 0.4s; position: absolute; width: 1200px; top: 330px; left:calc(50% - 600px); z-index: 101;
+}
+#tabMenu-wrap ul {
+	width:1200px; margin:0 auto;
+}
+#tabMenu-wrap li {
+	float:left; width:190px;
+}
+#tabMenu-wrap li:first-child {
+	width:410px; border:1px solid  #dadee7; height:58px; line-height:58px; font-size:1.5em; font-weight:500; color:#383e4c;	border-right:0px;
+}
+#tabMenu-wrap li:first-child span {
+	padding-left:20px;
+}
+#tabMenu-wrap a {
+	 width:100%; display: block; color: black; text-align: center; padding: 0px; text-decoration: none; font-size: 1em; font-weight:500; line-height: 58px; color:#777d89;
+	 background-color:#f1f1f1; border:1px solid #dadee7;
+}
+#tabMenu-wrap a:hover {
+	background-color: #383e4c; color: white; line-height:60px; border:0px;
+}
+#tabMenu-wrap a.active {
+	background-color: #383e4c; color: white; line-height:60px;
+}
+
+#tabMenu-wrap li:last-child a {
+	width:221px; background-color:#ff0198; border:0px; line-height:60px; color:#fff;
+}
+
+#tabMenu-wrap li a span {
+	position:relative; padding-left: 25px;
+}
+#tabMenu-wrap li a span.icon1:before {
+	content:""; width:18px; height:24px; background:url('../../images/icon_Forward_01_off.png') no-repeat;
+	position: absolute; top: 1px; left: 5px;
+}
+#tabMenu-wrap li a span.icon2:before {
+	content:""; width:18px; height:24px; background:url('../../images/icon_Forward_02_off.png') no-repeat;
+	position: absolute; top: 1px; left: 5px;
+}
+#tabMenu-wrap li a span.icon3:before {
+	content:""; width:22px; height:24px; background:url('../../images/icon_Forward_03_off.png') no-repeat;
+	position: absolute; top: 1px; left: 0px;
+}
+#tabMenu-wrap li a span.icon4:before {
+	content:""; width:19px; height:24px; background:url('../../images/icon_Forward_04_on.png') no-repeat;
+	position: absolute; top: 1px; left: 0px;
+}
+#tabMenu-wrap li a:hover span.icon1:before {
+	content:""; background:url('../../images/icon_Forward_01_on.png') no-repeat;
+}
+#tabMenu-wrap li a:hover span.icon2:before {
+	content:""; background:url('../../images/icon_Forward_02_on.png') no-repeat;
+}
+#tabMenu-wrap li a:hover span.icon3:before {
+	content:""; background:url('../../images/icon_Forward_03_on.png') no-repeat;
+}
+#tabMenu-right {
+	float: right;
+}
+
+#tabMenu-wrap.fix_height1 {
+	position:fixed; top:80px;
+}
+#tabMenu-wrap.fix_height2 {
+	position:absolute; top:330px;	
+}
+
+
+section {
+	width:1200px; margin:0 auto; height:auto;
+}
+section .inner {
+	width: 100%; margin: 0 auto; position: relative; border:1px solid #dadee7; border-top:0px; border-bottom:0px;
+	padding:60px 70px 0; font-size: 1.125em; font-weight: 300;
+}
+
+section .inner h2 {
+	font-size:1.6em; font-weight:700; color:#383e4c;
+}
+section .inner h3 {
+	padding-top:50px; font-size:1.3em; font-weight:500; color:#383e4c;
+}
+section .inner h3.first {
+	padding-top:20px;
+}
+section .inner p.explanation {
+	padding:7px 0 0 10px; font-size:.75em; font-weight:400; color:#656565; position: relative;
+}
+section .inner p.explanation:before {
+	content: "";
+	display: block; width: 3px; height: 3px; background:url('../../../img1/icon_dot.png') no-repeat;
+	position: absolute; top: 12px; left:0; z-index: 1;
+}
+
+
+section:nth-child(4) .inner h2 {
+	padding-top:70px;
+}
+section#join_example .inner h2 {
+	padding-top:100px;
+}
+section#know .inner h2 {
+	padding-top:100px;
+}
+section#know .inner {
+	padding-bottom:80px;
+}
+
+/*************************************** 여행자보험 */
+.row-highlight {
+	position: relative; counter-reset: num; padding: 20px 0 0 57px;
+	min-height: 45px;
+}
+.row-highlight:before {
+	content:"주";
+	display:block; position:absolute; top:20px; left:0;
+	font-size:.75em; font-weight:500;
+	width:42px; height:42px; color:#333; text-align:center; line-height:39px;
+	border:2px solid #595c63;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.row-highlight li {
+	font-size:.75em; font-weight:400; line-height: 140%;
+}
+.join-notice {
+	font-size:1em; font-weight:500; margin:40px 0 0; color:#666;
+}
+.join-notice li{
+	font-size:15px; font-weight:400; line-height:130%;
+}
+.join-notice li:first-child {
+	margin-top:10px;
+}
+.box-cont {
+	margin-top: 25px; padding: 21px 20px;
+    border: 1px solid #ccc; background: #fafafa;
+}
+.box-cont li {
+    position: relative;
+	padding: 0 0 6px 11px;
+	color: #666; font-size:.75em; font-weight:400; letter-spacing: -1px;
+}
+.box-cont li:before {
+	content: "";
+	display: block;
+	position: absolute; top: 6px; left: 0; width: 3px; height: 3px; background: #666; border-radius: 50%;
+}
+.terms-area {
+	margin-top:30px; overflow:hidden;
+	font-size:.875em; font-weight:400; color:#000;
+}
+.terms-area li {
+	float:left;
+	width:30%; margin-right:20%; margin-top:20px;
+}
+
+.terms-area li p {
+	font-weight:700; padding-bottom:10px;
+}
+.row-prec {
+	padding:20px 0 0; font-size: 15px; font-weight:400; line-height:130%;
+}
+.common-type {
+	font-size:.75em; letter-spacing: -.025em; font-weight:400;
+	padding-top:25px;
+}
+.common-type li {
+	line-height:160%; color: #666;
+}
+.row-bor li {
+	position: relative;
+	padding-left:15px; color: #666;
+}
+.row-bor li:before {
+	content: "-";
+    display: inline; position: absolute; top: 0px; left: 0px;
+}
+.common-type .sub_ttl {
+	font-size:18px; font-weight:500; color:#ff0198;
+	padding-bottom:5px;
+}
+.row-numlist li {
+    text-indent: -14px; padding-left: 14px;
+	color:#666; font-size:.875em; font-weight:500;
+}
+.ssub_ttl {
+	font-size:15px; font-weight:500; color:#000; padding:10px 0;
+}
+.type-prectxt {
+	font-size:.875em; font-weight:500; color:#000; padding-bottom:10px;
+}
+
+
+/*************************************** Table Sytl Css ****/
+.table-basic {
+	width:100%;
+	border-collapse:collapse; border-spacing:0px;
+	letter-spacing:-.025em; font-family: "NanumSquare", sans-serif;
+	background: #fff; border-top:2px solid #595c63; margin-top:10px;
+}
+.table-basic thead th,
+.table-basic tbody th,
+.table-basic tbody td {
+	border-left:1px solid #dfdfe1; border-bottom:1px solid #dfdfe1;
+	padding: 8px 15px 10px 14px; font-size: .875em; font-weight:400;
+}
+.table-basic thead th:first-child,
+.table-basic th:first-child, 
+.table-basic td:first-child {
+	border-left:0;
+}
+.table-basic td:last-child {
+	text-align:right;
+}
+.table-basic thead th {
+	color:#000; font-weight:500; vertical-align:middle; background-color:#f7f7f7; 
+}
+.table-basic thead th:nth-child(1){
+	width:26%;
+}
+.table-basic thead th:nth-child(2){
+	width:60%;
+}
+.table-basic thead th:nth-child(3){
+	width:14%;
+}
+.table-basic tbody td { 
+	color:#111; line-height:120%;
+	vertical-align:middle; font-size:.75em
+}
+
+.table-basic1 {
+	width:100%;
+	border-collapse:collapse; border-spacing:0px;
+	letter-spacing:-.025em; font-family: "NanumSquare", sans-serif;
+	background: #fff; border-top:2px solid #595c63; margin-top:10px;
+}
+.table-basic1 thead th,
+.table-basic1 tbody th,
+.table-basic1 tbody td {
+	border-left:1px solid #dfdfe1; border-bottom:1px solid #dfdfe1;
+	padding: 8px 15px 10px 14px; font-size: .75em; font-weight:400;
+}
+.table-basic1 thead th:first-child,
+.table-basic1 th:first-child, 
+.table-basic1 td:first-child {
+	border-left:0;
+}
+.table-basic1 tbody th {
+	color:#000; font-weight:500; font-size: .875em;
+	vertical-align:middle;
+	background-color:#f7f7f7; 
+}
+.table-basic1 th:nth-child(1){
+	width:20%;
+}
+.table-basic1 td:nth-child(2){
+	width:80%;
+}
+.table-basic1 tbody td { 
+	color:#111; line-height:120%;
+	vertical-align:middle; font-size:.75em
+}
+
+.table-basic2 {
+	width:100%;
+	border-collapse:collapse; border-spacing:0px;
+	letter-spacing:-.025em; font-family: "NanumSquare", sans-serif;
+	background: #fff; border-top:2px solid #595c63; margin-top:10px;
+}
+.table-basic2 thead th,
+.table-basic2 tbody th,
+.table-basic2 tbody td,
+.table-basic2 tfoot th,
+.table-basic2 tfoot td {
+	border-left:1px solid #dfdfe1; border-bottom:1px solid #dfdfe1;
+	padding: 8px 10px;font-size: .75em; font-weight:400; letter-spacing: -.025em;
+}
+.table-basic2 thead th:first-child,
+.table-basic2 th:first-child, 
+.table-basic2 td:first-child,
+.table-basic2 tfoot th:first-child,
+.table-basic2 tfoot td:first-child, {
+	border-left:0;
+}
+.table-basic2 thead tr + tr th:first-child {
+	border-left:1px solid #dfdfe1;
+}
+.table-basic2 tr th:first-child, .table-basic2 tr td:first-child {
+	border-left:1px solid #dfdfe1;
+}
+.table-basic2 thead th, 
+.table-basic2 tbody th {
+	color:#000; font-weight: 500; font-size: .875em; vertical-align:middle; background-color:#f7f7f7;
+}
+.table-basic2 td {
+	font-weight:400;
+}
+.table-basic2 tbody th {
+	width:6%;
+}
+.table-basic2 thead th:nth-child(1){
+	width:12%;
+}
+.table-basic2 thead th:nth-child(2){
+	width:12%;
+}
+.table-basic2 thead th:nth-child(3){
+	width:12%;
+}
+.table-basic2 thead tr:first-child th:first-child {
+	width:52%;
+}
+.table-basic2 tfoot th, .table-basic2 tfoot td{
+	color:#ff0198; background-color:#f7f7f7; font-weight:500; font-size:.75em
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="54" viewBox="0 0 70 54">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="그룹_4070" transform="translate(-744 -647)">
+        <g id="free-icon-small-plane-1882204" transform="translate(744.999 655)">
+            <path id="패스_8159" d="M49.477 19.658a12.826 12.826 0 0 1-10.922-6.039l-.015-.025-3-4.938-21.646.144L8.206 0H0v18.765l7.354 4.6a31.718 31.718 0 0 0 14.267 4.729L18.95 38.16h13.282l8.539-9.96h20.418c4.261 0 6.145-4.037 6.554-6.2l.5-2.339H49.478zm-23.859 0h-4v-4h4zm4.164 0v-4h4v4zm0 0" class="cls-1"/>
+            <path id="패스_8160" d="M303.385 66.979a8.845 8.845 0 0 0 7.525 4.153h8.59l-4.274-7.124-13.584.093zm0 0" class="cls-1" transform="translate(-261.433 -55.477)"/>
+        </g>
+        <path id="사각형_2252" fill="none" d="M0 0H70V54H0z" transform="translate(744 647)"/>
+    </g>
+</svg>
