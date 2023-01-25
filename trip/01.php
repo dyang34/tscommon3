@@ -850,5 +850,24 @@ include "../include/hana_check.php";
 */	
 ?>
 <!-- LayerPopup */ -->
+<script type="text/javascript">
+const rtnNoBlank = function(obj) {
+	var str_space = /\s/;  // 공백체크
+    if(str_space.exec(obj.val())) { //공백 체크
+        obj.val(obj.val().replace(' ','')); // 공백제거
+        return false;
+    }
+}
+
+$(document).on('keyup', 'input[name="input_name[]"]', function(e) {
+	rtnNoBlank($(this));
+});
+
+
+$(document).on('change', 'input[name="input_name[]"]', function(e) {
+	rtnNoBlank($(this));
+});
+
+</script>
 </body>
 </html>
