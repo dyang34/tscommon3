@@ -861,11 +861,13 @@ const rtnNoBlank = function(obj) {
 
 $(document).on('keyup', 'input[name="input_name[]"]', function(e) {
 	rtnNoBlank($(this));
+	//$(this).val($(this).val().replace(' ','')); // 공백제거
 });
 
 
 $(document).on('change', 'input[name="input_name[]"]', function(e) {
 	rtnNoBlank($(this));
+	//$(this).val($(this).val().replace(' ','')); // 공백제거
 });
 
 </script>
