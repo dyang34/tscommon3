@@ -1,7 +1,7 @@
 <div id="header">
     <div class="in_header">
 <?
-    if (defined('_TOURSAFE_SUBSITE_NEW_BI')) {
+//if (defined('_TOURSAFE_SUBSITE_NEW_BI')) {
 ?>
         <!-- 추가 로고 작업할 영역  main.php?logo=1 로 url 보기 -->
 		<h1 class="logo_new"><a href="/main/main.php">
@@ -14,11 +14,13 @@
 ?>
         <img src="/tscommon/img/common/toursafe-logo.png" alt="투어세이프 여행자보험"></a>
 <?
+/*
 } else {
 ?>
         <h1><a href="/main/main.php"><img src="/img/logo.png?v=13457" alt="투어세이프 여행자보험"></a>
 <?    
 }
+*/
 ?>
             <?=$arrToursafeCommonAddHtml['header_right']?>
         </h1>
