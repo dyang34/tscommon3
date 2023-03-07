@@ -392,8 +392,8 @@
 							<label class="ss_tit db">여행목적</label>
 							<select name="trip_purpose" id="trip_purpose" class="select" onchange="trip_purpose_change(this.value);">
 								<option value="">선택해주세요</option>
-<? for ($i=1;$i<=count($trip_purpose_array);$i++) { ?>
-								<option value="<?=$i?>"><?=$trip_purpose_array[$i]?></option>
+<? for ($i=1;$i<=count($trip_purpose_long_term_array);$i++) { ?>
+								<option value="<?=$i?>"><?=$trip_purpose_long_term_array[$i]?></option>
 <? } ?>
 							</select>
 						</div>
