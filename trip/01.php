@@ -178,7 +178,12 @@ include "../include/hana_check.php";
 			// pagerCustom: '#pager1',
 		});
 
-		var today = new Date();
+		let today = new Date();
+		let maxday = new Date();
+		
+		maxday.setMonth(maxday.getMonth()+6);
+		maxday.setDate(maxday.getDate()-1);
+
 		var tomorrow = new Date(Date.parse(today) + (1000 * 60 * 60 * 24));
 
 		$("#start_date").datepicker({
@@ -193,9 +198,9 @@ include "../include/hana_check.php";
 			buttonText: "Select date",
 			minDate: today,
 			<? if ($tripType == '2'){ ?>
-			maxDate: "+6M",
+			maxDate: maxday,
 			<? } elseif ($tripType == '1'){ ?>
-			maxDate: "+6M",
+			maxDate: maxday,
 			<? } ?>
 			onClose: function( selectedDate ) {    
 				$("#end_date").val("");
