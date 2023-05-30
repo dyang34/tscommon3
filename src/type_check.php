@@ -152,6 +152,15 @@ if ($type=="1") {
 		$type = "2";
 		$thai_pass = '5630';		
 	}
+} elseif ($type=="15") {
+	if ($row['type_check_2']!="Y") {
+		$json_code = array('result'=>'false','msg'=>'지금은 신청할수 없습니다.');
+		echo json_encode($json_code);
+		exit;
+	} else {
+		$type = "2";
+		$thai_pass = '46100';		
+	}
 }
 
 session_start("s_session_key");

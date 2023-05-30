@@ -31,6 +31,9 @@ if(in_array('4860', $typeCheckArr)){
 } else if(in_array('486000', $typeCheckArr)){
 	$thai_chk = 'thaiPass1';
 	$nation_chk = 'thai';
+} else if(in_array('46100', $typeCheckArr)){
+	$thai_chk = 'japanPass';
+	$nation_chk = 'japan';
 } else {
 	$thai_chk = '';
 	$nation_chk = '';

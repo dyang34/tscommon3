@@ -491,7 +491,7 @@ include "../include/hana_check.php";
 									<label class="ss_tit">여행국가</label>
 <?
 	if ($tripType=="2") {
-		if(strcmp($thai_chk,'thaiPass') !== 0 && strcmp($thai_chk,'kamboPass') !== 0 && strcmp($thai_chk,'indonPass') !== 0 && strcmp($nation_chk,'vietnam') !== 0 && strcmp($nation_chk,'phil') !== 0 && strcmp($nation_chk,'mala') !== 0 && strcmp($thai_chk,'thaiPass5') !== 0 && strcmp($thai_chk,'thaiPass1') !== 0){ 
+		if(strcmp($thai_chk,'thaiPass') !== 0 && strcmp($thai_chk,'kamboPass') !== 0 && strcmp($thai_chk,'indonPass') !== 0 && strcmp($nation_chk,'vietnam') !== 0 && strcmp($nation_chk,'phil') !== 0 && strcmp($nation_chk,'mala') !== 0 && strcmp($thai_chk,'thaiPass5') !== 0 && strcmp($thai_chk,'thaiPass1') !== 0 && strcmp($thai_chk,'japanPass') !== 0){ 
 ?>
 									<input type="text"  class="input" name="nation_search" id="nation_search"  placeholder="여행국가 명을 입력하세요.">
 									<input type="hidden"  value="" name="nation" >
@@ -518,6 +518,8 @@ include "../include/hana_check.php";
 				$nano = 486;
 			} else if($thai_chk == 'thaiPass1' && $nation_chk=='thai'){
 				$nano = 486;
+			} else if($thai_chk == 'japanPass' && $nation_chk=='japan'){
+				$nano = 461;
 			}
 			$sql_nation="select * from nation where use_type='Y' and no = {$nano} order by disp_type asc, nation_name asc";
 //		echo $sql_nation;

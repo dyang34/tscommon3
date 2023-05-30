@@ -657,7 +657,7 @@ if($thai_chk == 'thaiPass'){
 									<label class="ss_tit">여행국가</label>
 									<?
 	if ($tripType=="2") {
-		if(strcmp($thai_chk,'thaiPass') !== 0 && strcmp($thai_chk,'kamboPass') !== 0 && strcmp($thai_chk,'indonPass') !== 0 && strcmp($nation_chk,'vietnam') !== 0 && strcmp($nation_chk,'phil') !== 0 && strcmp($nation_chk,'mala') !== 0 && strcmp($thai_chk,'thaiPass5') !== 0 && strcmp($thai_chk,'thaiPass1') !== 0){ 
+		if(strcmp($thai_chk,'thaiPass') !== 0 && strcmp($thai_chk,'kamboPass') !== 0 && strcmp($thai_chk,'indonPass') !== 0 && strcmp($nation_chk,'vietnam') !== 0 && strcmp($nation_chk,'phil') !== 0 && strcmp($nation_chk,'mala') !== 0 && strcmp($thai_chk,'thaiPass5') !== 0 && strcmp($thai_chk,'thaiPass1') !== 0 && strcmp($thai_chk,'japanPass') !== 0){ 
 ?>
 									<input type="text"  class="input" name="nation_search" id="nation_search"  placeholder="여행국가 명을 입력하세요.">
 									<input type="hidden"  value="" name="nation" >
@@ -684,6 +684,8 @@ if($thai_chk == 'thaiPass'){
 				$nano = 486;
 			} else if($thai_chk == 'thaiPass1' && $nation_chk=='thai'){
 				$nano = 486;
+			} else if($thai_chk == 'japanPass' && $nation_chk=='japan'){
+				$nano = 461;
 			}
 		$sql_nation="select * from nation where use_type='Y' and no = {$nano} order by disp_type asc, nation_name asc";
 //		echo $sql_nation;
@@ -976,7 +978,7 @@ if($thai_chk == 'thaiPass'){
 </div>
 <!-- 여행국가 초성 검색 View --
 <?
-	if($thai_chk == 'thaiPass' || $thai_chk == 'indonPass' || $thai_chk == 'philPass' || $nation_chk == 'vietnam') {
+	if($thai_chk == 'thaiPass' || $thai_chk == 'indonPass' || $thai_chk == 'philPass' || $nation_chk == 'vietnam' || $nation_chk == 'japan') {
 ?>
 <!-- /* LayerPopup --
 <div class="layer-popup">
