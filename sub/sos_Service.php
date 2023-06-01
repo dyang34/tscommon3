@@ -232,7 +232,7 @@
 			</div>
 			<div class="col_2 ty2">
 				<div class="call_box">
-					82-2-3449-3500 <span>(한국어 가능)</span>
+					82-1588-1983 <span>(한국어 가능)</span>
 				</div>
 				<ul class="clearfix">
 					<li>01 의사 및 병원 소개 서비스</li>

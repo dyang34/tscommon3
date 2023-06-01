@@ -63,7 +63,7 @@
                         <p class="txt"><strong>감사합니다.</strong><br>여행자보험 선물등록이 완료되었습니다.</p>
                         <p class="pt10 fcor0" style="font-size:0.7em; line-height:140%;">상세내용은 가입조회에서 확인하실 수 있습니다.</p>
 						<p class="pt10 fcor0" style="font-size:0.6em; line-height:120%;">* 사고접수/계약취소/정보변경 등은 투어세이프 여행보험 콜센터 1800-9010(평일09~18시)로 연락주시기 바랍니다.</p>
-						<p class="pt10 fcor0" style="font-size:0.6em; line-height:120%;">* 해외여행 중 현지에서 사고 발생 시 24시간 한국어 안내가 지원되는 에이스손해보험 긴급지원서비스 센터 82-2-3449-3500로 연락주시면 도움 받으실 수 있습니다.</p>
+						<p class="pt10 fcor0" style="font-size:0.6em; line-height:120%;">* 해외여행 중 현지에서 사고 발생 시 24시간 한국어 안내가 지원되는 에이스손해보험 긴급지원서비스 센터 82-1588-1983로 연락주시면 도움 받으실 수 있습니다.</p>
                     </div>
 				
 					<div class="complete_box" style="text-align:left;">

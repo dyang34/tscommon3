@@ -106,14 +106,34 @@
 					<div class="complete_box" style="text-align:left;">
 						<p class="pt10 fcor0" style="font-size:0.6em; line-height:120%;">* 가입확인서는 휴대폰으로 카카오톡 또는 문자메세지로 발송해 드립니다.</p>
 						<p class="pt10 fcor0" style="font-size:0.6em; line-height:120%;">* 사고접수/계약취소/정보변경 등은 투어세이프 여행보험 콜센터 1800-9010(평일09~18시)로 연락주시기 바랍니다.</p>
-						<p class="pt10 fcor0" style="font-size:0.6em; line-height:120%;">* 해외여행 중 현지에서 사고 발생 시 24시간 한국어 안내가 지원되는 에이스손해보험 긴급지원서비스 센터 82-2-3449-3500로 연락주시면 도움 받으실 수 있습니다.</p>
+						<p class="pt10 fcor0" style="font-size:0.6em; line-height:120%;">* 해외여행 중 현지에서 사고 발생 시 24시간 한국어 안내가 지원되는 에이스손해보험 긴급지원서비스 센터 82-1588-1983로 연락주시면 도움 받으실 수 있습니다.</p>
 					</div>
 
-
 					<div class="bnner-box-new">
-						<a href="https://online.cardif.co.kr/index.jsp?enterWay=1&bankCd=G63&branchCd=00000&recruitCd=22500005&partner=A0025&package=h001" target="_blank"><img src="../img/pages/banner-plus.jpg"></a>
-						<a href="https://www.acedirect.co.kr/servlets/common/commonForward.ace?target=pc/products/product&layout=type1&productGroup=CM&productType=APT&utm_source=ulife&utm_medium=affiliate&utm_campaign=apt_ulife" target="_blank" class="pc"><img src="../img/pages/banner-relief.jpg"></a>
-						<a href="https://www.acedirect.co.kr/servlets/common/commonForward.ace?target=mobile/products/product&layout=mtype1&productGroup=CM&productType=APT&utm_source=ulife&utm_medium=affiliate&utm_campaign=apt_ulife" target="_blank" class="mobile"><img src="../img/pages/banner-relief.jpg"></a>
+						<!-- 카디프생명 배너 -->
+						<div class="banner-box-wrap bnp">
+							<a href="https://online.cardif.co.kr/index.jsp?enterWay=1&bankCd=G63&branchCd=00000&recruitCd=22500005&partner=A0025&package=h001" target="_blank">
+								<div class="logo-item"><img src="https://www.toursafe.co.kr/img/new/logo-bnp.png?te"></div>
+								<div class="cont-text-item"><img src="https://www.toursafe.co.kr/img/new/bnnr-cont-text-bpc.png?ten"></div>
+								<i class="icon-bpc">카디프생명 아이콘</i>
+							</a>
+						</div>
+						<!-- CHUBB 배너 -->
+						<div class="banner-box-wrap chubb pc">
+							<a href="https://www.acedirect.co.kr/servlets/common/commonForward.ace?target=pc/products/product&layout=type1&productGroup=CM&productType=APT&utm_source=ulife&utm_medium=affiliate&utm_campaign=apt_ulife" target="_blank">
+								<div class="logo-item"><img src="https://www.toursafe.co.kr/img/new/logo_kr_col.png?te"></div>
+								<div class="cont-text-item"><img src="https://www.toursafe.co.kr/img/new/bnnr-cont-text-chubb.png?ten"></div>
+								<i class="icon-chubb">CHUBB 에이스손해보험 아이콘</i>
+							</a>
+						</div>
+						<div class="banner-box-wrap chubb mobile">
+							<a href="https://www.acedirect.co.kr/servlets/common/commonForward.ace?target=mobile/products/product&layout=mtype1&productGroup=CM&productType=APT&utm_source=ulife&utm_medium=affiliate&utm_campaign=apt_ulife" target="_blank">
+								<div class="logo-item"><img src="https://www.toursafe.co.kr/img/new/logo_kr_col.png?te"></div>
+								<div class="cont-text-item"><img src="https://www.toursafe.co.kr/img/new/bnnr-cont-text-chubb.png?ten"></div>
+								<i class="icon-chubb">CHUBB 에이스손해보험 아이콘</i>
+							</a>
+						</div>
+						<!-- 말톡 배너 -->
 						<a href="http://store.maaltalk.com/?id=toursafe" target="_blank"><img src="../img/pages/banner-maaltalk.jpg"></a>
 					</div>
 
