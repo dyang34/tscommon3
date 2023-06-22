@@ -27,6 +27,7 @@ $common_root_dir = $root_dir."/tscommon3";
 $member_no=_TOURSAFE_MEMBER_NO;
 //$site_config_company_type = "1";
 
+include_once $root_dir."/include/dbconn_ulife.php";
 include_once $root_dir."/include/dbconn.php";
 include_once $root_dir."/include/option_config.php";
 include_once $root_dir."/lib/function.php";

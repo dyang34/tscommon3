@@ -4,9 +4,17 @@
 //if (defined('_TOURSAFE_SUBSITE_NEW_BI')) {
 ?>
         <!-- 추가 로고 작업할 영역  main.php?logo=1 로 url 보기 -->
-		<h1 class="logo_new"><a href="/main/main.php">
+
+
 <?
-    if(file_exists($_SERVER['DOCUMENT_ROOT']."/img/logo.png")) {
+    if(file_exists($_SERVER['DOCUMENT_ROOT']."/img/logo.png") && _TOURSAFE_MEMBER_NO != '106') {
+?>            
+		<h1 class="logo_new"><a href="/main/main.php">
+<?}else{?>
+		<h1 class="logo_new"><a href="/index_longterm.php">
+<?}?>
+<?
+    if(file_exists($_SERVER['DOCUMENT_ROOT']."/img/logo.png") && _TOURSAFE_MEMBER_NO != '106') {
 ?>            
         <img src="/img/logo.png?v=<?=time()?>" alt="logo" class="first">
 <?

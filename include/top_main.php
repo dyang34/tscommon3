@@ -38,7 +38,7 @@ if (_TOURSAFE_SUBSITE_NAME=="ta") {
 <?
 }
 ?>
-
+<?php /*
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VF099VJPJ7"></script>
 <script>
@@ -48,12 +48,6 @@ if (_TOURSAFE_SUBSITE_NAME=="ta") {
 
  gtag('config', 'G-VF099VJPJ7');
 
- /**
-* 애널리틱스에서 외부 링크 클릭을 캡처하는 함수입니다.
-* 이 함수는 유효한 URL 문자열을 인수로 취하고, 해당 URL 문자열을
-* 이벤트 라벨로 사용합니다. 이동 메소드를 'beacon'으로 설정하면
-* 지원하는 브라우저에서 'navigator.sendBeacon'를 사용하여 조회를 전송할 수 있습니다.
-*/
 var getOutboundLink = function(url) {
   gtag('event', 'click', {
     'event_category': 'dusitprincess_ad',
@@ -63,9 +57,24 @@ var getOutboundLink = function(url) {
   });
 }
 </script>
+*/?>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-57SSLHD');</script>
+<!-- End Google Tag Manager -->"
+
 </head>
 
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57SSLHD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- loading -->
 <div class="loading_area" id="loading_area" style="display:none">
     <div class="loader"></div>

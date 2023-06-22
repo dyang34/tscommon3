@@ -14,7 +14,7 @@
 				?>
 		</ul>
 		<address>
-			<span>주소 서울특별시 중구 광희동2가 266 성우빌딩 10F</span><span class="line"></span><span>대표 김정훈</span><span class="line"></span><span>사업자등록번호 118-88-00158  </span><br><span>이메일 <a href="mailto:toursafe@bis.co.kr">toursafe@bis.co.kr</a> </span><span class="line"></span><span>전화 <a href="tel:1800-9010">1800-9010</a> </span><span class="line"></span><span>팩스 02-2088-1673 </span>
+			<span>주소 서울특별시 중구 퇴계로 324 성우빌딩 10F</span><span class="line"></span><span>대표 김정훈</span><span class="line"></span><span>사업자등록번호 118-88-00158  </span><span class="line"></span><span>통신판매신고 번호: 2023-서울중구-0011</span><br><span>이메일 <a href="mailto:toursafe@bis.co.kr">toursafe@bis.co.kr</a> </span><span class="line"></span><span>전화 <a href="tel:1800-9010">1800-9010</a> </span><span class="line"></span><span>팩스 02-2088-1673 </span>
 			</address>
 			<p class="copy">COPYRIGHT ⓒ TOURSAFE Co., Ltd. ALL RIGHTS RESERVED </p>
 			<p class="copy">준법감시인 심의필  OTA-2022-004 (2022.01.17.~2023.01.16)</p>
